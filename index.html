@@ -3,32 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    
+    <!--css font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,200;1,300&display=swap" rel="stylesheet"> 
+    <!--css custom-->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>F49 Project Team</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="header-left">
-                
-            </div>
-            <div class="header-right">
-    
-            </div>
-        </div> 
-    </header>
+          <div class="header-left">
+            <!-- <img class="logo" src="assets/img/logo.png" style="height: 40px; width:auto">  -->
+            Hostku
+          </div>
+          <!-- Tambahkan ikon menu disini -->
+          <span class="fa fa-bars menu-icon"></span>
+          <div class="header-right">
+            <a href="#">Beranda</a>
+            <a href="#keunggulan">Servis</a>
+            <a href="#produk_dan_layanan">Produk dan Layanan</a>
+          </div>
+        </div>
+      </header>
     <div class="top-main">
         <div class="container">
-            <h1>Unlimited Web Hosting</h1>
-            <h1>F49 TEAM</h1>
-            <img src="ss/undraw_cloud_hosting_aodd.svg" alt="">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <h1>Dapatkan Segera <span>Nama Hosting</span><br> Sesuai Keinginanmu</h1>
+            <p>Hanya disini Anda bisa mendapatkan harga termurah<br> dengan domain dan hosting dengan selera Anda.</p>
+            <div class="btn-wrapper">
+              <a href="#" class="btn"><span class="fa"></span>Klik Disini</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-main">
+        <div class="container">
+            <div class="item-domain">
+                <div class="search-text">
+                    <h2> Cari nama domain yang diinginkan</h2>
+                </div>
+                <div class="search-domain">
+                    <div class="domain-wrap">
+                        <input class="input-domain" type="text" placeholder="Ketik domain Anda disini"><br>
+                        <button class="button-domain" type="submit" value="submit">Cari Domain</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="contents">
         <div class="container">
-            <div class="heading">
+            <div class="heading" id="keunggulan">
                 <h2>service a better web awaits...</h2>
             </div>
             <div class="content">
@@ -59,12 +87,13 @@
                 <p class="text-judul">Cloud Backup</p>
                 <p class="text-info">Backup harian ke Cloud menjamin keamanan data penting anda</p>
             </div>
+            <div class="clear"></div>
         </div>
     </div>
 
     <div class="product-wrapper">
         <div class="container">
-          <div class="heading-product">
+          <div class="heading-product" id="produk_dan_layanan">
              <h2>Produk dan Layanan Kami</h2>
           </div>
           <div class="products">
@@ -171,12 +200,37 @@
           </div>
         </div>
     </div>
+    <div class="message-wrapper">
+        <div class="container">
+          <div class="heading">
+            <h1>Apakah anda siap untuk memulai web hosting anda bersama kami?</h1>
+          </div>
+          <span class="btn message">Mulai Daftar</span>
+        </div>
+    </div>
 
-
-
-    <div></div>
     <footer>
-
+        <div class="container">
+         <!-- <img src="./ss/logo.png">-->
+            <div class="footer-logo">
+                Hostku
+            </div>
+          <p>Unlimited Web Hosting</p>
+          <p>Complete package and affordable price.</p>
+        </div>
     </footer>
 </body>
 </html>
+
+<!-- 
+Source Image:
+https://www.freepik.com/free-vector/cloud-services-isometric-composition-with-conceptual-images-network-elements-storage-capsules-small-human-characters-vector-illustration_7199788.htm#page=1&query=illustration%20network%20connection&position=31
+
+https://www.freepik.com/free-vector/cloud-hosting-concept-illustration_6183217.htm#page=1&query=illustration%20network%20connection&position=40
+https://www.freepik.com/free-vector/wireless-technology-concept-4-glow-isometric-compositions-with-cloud-storage-voice-assistant-service-wireless-payment_6804380.htm
+https://www.freepik.com/free-vector/server-room-isometric-icon-database-connection-transfer-data-remote-cloud-storage-server-rack_4102278.htm#page=2&query=cloud+computing++network&position=11
+https://www.freepik.com/free-vector/scheme-data-transmission-isometric-secure-connection-cloud-computing-server-room-datacent_4102311.htm#page=2&query=cloud+computing++network&position=9
+
+
+    
+    >>
