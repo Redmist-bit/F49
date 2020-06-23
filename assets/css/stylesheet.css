@@ -5,6 +5,9 @@ h1, h2, h3, h4, h5, h6, p, div {
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -32,6 +35,41 @@ header {
   font-size:30px;
   font-weight: bold;
   padding-top:20px
+ }
+
+ #header-left {
+  animation: animated_div 5s 1;
+  -moz-animation: animated_div 5s 1;
+  -webkit-animation: animated_div 5s 1;
+  -o-animation: animated_div 5s 1;
+ }
+
+ @keyframes header-left{
+  0% {
+    transform: rotate(0deg);
+    left: 0px;
+    }
+  25% {
+    transform: rotate(20deg);
+    left: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 500px;
+  }
+  55% {
+    transform: rotate(0deg);
+    left: 500px;
+  }
+  70% {
+    transform: rotate(0deg);
+    left: 500px;
+    background: #1ec7e6;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: 0px;
+  }
  }
 
 .header-right {
@@ -319,6 +357,60 @@ font-size:29px;
     position: relative;
     top: 7px;
     box-shadow: none;
+  }
+
+  .scrolldown {
+    position: relative;
+    top: 30px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    transform: translateY(-80px) translateX(-50%)
+        rotate(45deg);
+  }
+
+  .scrolldown span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #1ec7e6;
+    border-right: 2px solid #1ec7e6;
+    animation: animate 1.5s linear infinite;
+  }
+
+  .scrolldown span:nth-child(1) {
+    transform: translate(-15px,-15px);
+    animation-delay: -0.4s;
+  }
+  .scrolldown span:nth-child(2) {
+    transform: translate(0,0);
+    animation-delay: -0.2s;
+  }
+  .scrolldown span:nth-child(3) {
+    transform: translate(15px,15px);
+    animation-delay: 0s;
+  }
+
+  @keyframes animate {
+    0% {
+      top: -5px;
+      left: -5px;
+      opacity: 0;
+    }
+    25% {
+      top: 0px;
+      left: 0px;
+      opacity: 1;
+    }
+    50%,100% {
+      top: 5px;
+      left: 5px;
+      opacity: 0;
+    }
   }
 
   footer img {
