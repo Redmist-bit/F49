@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 html, body,
 ul, ol, li,
 h1, h2, h3, h4, h5, h6, p, div {
   margin: 0;
   padding: 0;
 }
+* {
+  box-sizing: border-box;
+}
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', 'Montserrat', sans-serif;
 }
 a{
   text-decoration:none;
 }
 header {
-  height: 65px;
+  height: 70px;
   width: 100%;
   background-color: #00A7F5;
   opacity: 0.9;
@@ -23,12 +27,11 @@ header {
 
 .header-left {
   float: left;
-  width: 124px;
-  margin-top: 15px;
   font-family: 'Montserrat', sans-serif;
   color:#f7f7f7;
   font-size:30px;
   font-weight: bold;
+  padding-top:20px
  }
 
 .header-right {
@@ -51,24 +54,9 @@ header {
 
 .container {
     max-width: 1170px;
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
-  }
-
-  .fa {
-    margin-right: 5px;
-  }
-
-  .menu-icon {
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 21px 0;
-    display: none;
-  }
-
-  .clear {
-    clear: left;
   }
 
 .top-main {
@@ -87,6 +75,10 @@ header {
 .top-main h1 span {
   color:#FF5D52
 }
+.top-main p span {
+  color:#FF5D52;
+  font-weight: bold;
+}
 .top-main p {
   font-size:20px;
   line-height: 30px;
@@ -98,7 +90,7 @@ header {
   text-align: center;
   margin-top: 20px;
   border: none;
-  box-shadow: unset !important;
+  box-shadow: 0 7px #da473d;
   padding: 15px 35px;
   transition: all .5s;
   z-index: 1;
@@ -110,10 +102,17 @@ header {
   font-size: 17px;
   background: linear-gradient(to bottom right,#ff416c,#fa4612);
 }
+
+.btn-wrapper a:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
 .search-main{
   background-color: #efedf1;
-  padding-bottom: 70px;
-  padding-top: 70px;  
+  padding-bottom: 25px;
+  padding-top: 25px;  
 }
 .item-domain{
   align-items: center !important;
@@ -135,35 +134,43 @@ font-size:29px;
   width: 50%;
   position: relative;
 }
-.domain-wrap .input-domain{
+.domain-wrap{
+  display: flex;
+   flex-direction: row;
+}
+.input-domain{
   height: 50px;
   font-size: 16px;
   padding: 5px 20px;
-  width: 80%;
-  border-radius: 50px;
+  margin-bottom:2px;
+  border-radius: 30px;
   border: none;
-  display: block;
+  display: block;  
+  flex-basis: 75%;
+  
 }
-
-.domain-wrap .button-domain{
+.button-domain{
   color:#fff;
   text-align: center;
-  margin-top: -10px;
   border: none;
-  box-shadow: unset !important;
-  padding: 15px 35px;
   transition: all .5s;
   z-index: 1;
   text-transform: capitalize;
-  border-radius: 30px;display: inline-block;
+  border-radius: 30px;
   cursor: pointer;
   position: relative;
   font-weight: 700;
   font-size: 16px;
   background: linear-gradient(to bottom right,#ff416c,#fa4612);
+  flex-basis: 25%;
+}
+.domain-wrap .button-domain:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
 }
   .contents {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     padding-left: 5%;
     padding-right: 5%;
     background-color: #f7f7f7;
@@ -172,7 +179,7 @@ font-size:29px;
   
   .heading {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     color: #5f5d60;
   }
   
@@ -207,7 +214,7 @@ font-size:29px;
   }
 
   .heading-product {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 50px;
     color: #5f5d60;
   }
@@ -294,14 +301,18 @@ font-size:29px;
     text-align: center;
   }
 
-  .heading h1 {
-    font-size: 20px;
+  .message-heading h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .message {
     padding: 15px 40px;
-    background-color: #5dca88;
+    background: linear-gradient(to bottom right,#ff416c,#fa4612);;
     cursor: pointer;
-    box-shadow: 0 7px #1a7940;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 7px #da473d;
   }
 
   .message:active {
@@ -325,15 +336,18 @@ font-size:29px;
     padding-top: 30px;
     padding-bottom: 20px;
   }
+
   .footer-logo {
     float: left;
-    font-family: 'Montserrat', sans-serif;
     color:#00A7F5;
     font-size:30px;
     font-weight: bold;
     padding-right: 20px;
   }
 
+  .clear {
+    clear:left;
+}
   /* Tambahkan CSS untuk menu-icon */
   .menu-icon {
     color: white;
@@ -341,6 +355,6 @@ font-size:29px;
     font-size: 25px;
     padding: 21px 0;
     /* Gantikan property display ke none */
-    display:none !important;
+    display:none;
   }
   
