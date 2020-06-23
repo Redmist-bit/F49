@@ -148,9 +148,9 @@ header {
 }
 
 .search-main{
-  background-color: #efedf1;
-  padding-bottom: 25px;
-  padding-top: 25px;  
+  background-color: #fcfcfc;
+  padding-bottom: 40px;
+  padding-top: 40px;  
 }
 .item-domain{
   align-items: center !important;
@@ -166,6 +166,7 @@ header {
 }
 .search-text h2{
 font-size:29px;
+color:#181B22;
 }
 .search-domain{
   float: left;
@@ -189,6 +190,7 @@ font-size:29px;
 }
 .button-domain{
   color:#fff;
+  margin-left: 10px;
   text-align: center;
   border: none;
   transition: all .5s;
@@ -211,18 +213,22 @@ font-size:29px;
     padding-bottom: 50px;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #f7f7f7;
+    background-color: #fff;
     text-align: center;
   }
   
   .heading {
     padding-top: 50px;
-    padding-bottom: 20px;
-    color: #5f5d60;
+    padding-bottom: 40px;
+    color: #181B22;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
   }
   
-  .heading h2 {
-    font-weight: normal;
+  .heading p {
+    padding: 10px 10px;
+    font-size: 16px;
+    line-height: 1.8;
   }
   .content {
     float: left;
@@ -237,6 +243,7 @@ font-size:29px;
       height: 150px;
   }
   .text-judul {
+    padding-top:20px;
     position: relative;
     font-weight: bold;
     font-style: bold;
@@ -246,20 +253,24 @@ font-size:29px;
   .text-info {
     width: 80%;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 10px;
+    line-height: 1.5;
     font-size: 15px;
     color: #5f5d60;
   }
 
   .heading-product {
+    color: #181B22;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
     padding-top: 50px;
     padding-bottom: 50px;
-    color: #5f5d60;
   }
 
   .product-wrapper {
-    background-color:white;
+    background-color:#fcfcfc;
     text-align: center;
+    padding-bottom:60px;
   }
   
   .product {
@@ -360,14 +371,15 @@ font-size:29px;
   }
 
   .scrolldown {
+    margin-top: 15px;
+    margin-bottom: 10px;
     position: relative;
     top: 30px;
     left: 50%;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     background: #fff;
-    transform: translateY(-80px) translateX(-50%)
-        rotate(45deg);
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
   }
 
   .scrolldown span {
@@ -428,7 +440,6 @@ font-size:29px;
     padding-top: 30px;
     padding-bottom: 20px;
   }
-
   .footer-logo {
     float: left;
     color:#00A7F5;
